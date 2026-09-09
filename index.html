@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text to Speech Converter</title>
+    <!-- Font Awesome for icons (optional but nice) -->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+</head>
+
+<body>
+    <div class="container">
+        <h1><i class="fas fa-volume-up" style="color:#7c6df0; margin-right: 10px;"></i>Text to Speech</h1>
+        <p class="subtitle">Type or paste any text and let your browser read it aloud</p>
+
+        <!-- Text Input -->
+        <div class="input-section">
+            <textarea id="textInput"
+                placeholder="Write something here... (e.g., Hello, welcome to the world of speech synthesis!)">Hello, welcome to the world of speech synthesis!</textarea>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+            <div class="control-group">
+                <label for="voiceSelect"><i class="fas fa-user-voice"></i> Voice</label>
+                <select id="voiceSelect"></select>
+            </div>
+            <div class="control-group">
+                <label for="rateRange"><i class="fas fa-tachometer-alt"></i> Rate</label>
+                <input type="range" id="rateRange" min="0.5" max="2.0" step="0.1" value="1.0" />
+                <div class="value-display" id="rateValue">1.0×</div>
+            </div>
+            <div class="control-group">
+                <label for="pitchRange"><i class="fas fa-wave-square"></i> Pitch</label>
+                <input type="range" id="pitchRange" min="0.5" max="2.0" step="0.1" value="1.0" />
+                <div class="value-display" id="pitchValue">1.0</div>
+            </div>
+            <div class="control-group">
+                <label><i class="fas fa-info-circle"></i> Status</label>
+                <div style="background:rgba(255,255,255,0.05); border-radius:14px; padding:10px 14px; color:#a0aec0; font-size:0.9rem; display:flex; align-items:center; gap:8px;"
+                    id="statusBox">
+                    <i class="fas fa-circle" style="color:#4ade80; font-size:0.6rem;"></i> Ready
+                </div>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="actions">
+            <button class="btn btn-speak" id="speakBtn"><i class="fas fa-play"></i> Speak</button>
+            <button class="btn btn-stop" id="stopBtn"><i class="fas fa-stop"></i> Stop</button>
+            <button class="btn btn-clear" id="clearBtn"><i class="fas fa-undo-alt"></i> Clear</button>
+        </div>
+
+        <div class="status" id="statusMessage">💡 Click "Speak" to hear the text</div>
+    </div>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
