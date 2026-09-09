@@ -6,7 +6,7 @@ A simple, elegant, and fully responsive web application that converts text into 
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
-![Demo Screenshot]([https://via.placeholder.com/800x400.png?text=Text+to+Speech+Converter+Demo](https://i.postimg.cc/9Qrzd9R8/Screenshot-2026-09-09-113332.png))
+![Text to Speech Converter Demo](https://i.postimg.cc/9Qrzd9R8/Screenshot-2026-09-09-113332.png)
 
 ## ✨ Features
 
